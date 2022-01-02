@@ -1,7 +1,7 @@
 (function () {
 
   var nombre= prompt("Bienvenida/o a Cuenta regresiva de cumpleaños 2.0 por favor ingrese su nombre");
-  let birthday= prompt("Muchas gracias " + nombre + "! por favor ingrese la fecha de su cumpleaños en el siguiente formato: (dd mm) y le diremos cuanto tiempo falta para que tenga un añito más.");
+  let birthday= prompt("Muchas gracias " + nombre + "! por favor ingrese la fecha de su cumpleaños en el siguiente formato: (day mon) y le diremos cuanto tiempo falta para que tenga un añito más.");
    
   const milisegundos = 1 ,
       second = milisegundos * 1000,
@@ -13,7 +13,7 @@
       //let birthday = "Dec 27, 2021 21:00:00:00";
   
     
-      countDown = new Date(birthday + 2021 ).getTime(),
+      countDown = new Date(birthday + 2022 ).getTime(),
       x = setInterval(function () {
         let now = new Date().getTime(),
           distance = countDown - now;
